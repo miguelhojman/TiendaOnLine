@@ -1,17 +1,34 @@
 .navbar {
+  min-height: 7rem;
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 0.7rem;
   border-bottom: 2px solid grey;
   background-color: #33332f;
   color: white;
+  position: relative;
+}
+.navbar-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+}
+
+.navbar-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
 }
 .navbar-cart {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   margin-right: 1rem;
 }
 .navbar-cart-items {
-  position: relative;
   left: 0.5rem;
   top: 0.5rem;
   color: white;
@@ -22,8 +39,25 @@
   height: 2rem;
 }
 .navbar-cart-items p {
-  font-size: 1rem;
+  font-size: 1.3rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.cart {
+  display: none;
+}
+.show {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+  background-color: white;
+  border-radius: 0.5rem;
+  border: 1px solid red;
+  right: 0px;
+  top: 8rem;
+  min-width: 40%;
 }

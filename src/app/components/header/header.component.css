@@ -1,0 +1,29 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 2px solid grey;
+  background-color: #33332f;
+  color: white;
+}
+.navbar-cart {
+  position: relative;
+  margin-right: 1rem;
+}
+.navbar-cart-items {
+  position: relative;
+  left: 0.5rem;
+  top: 0.5rem;
+  color: white;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: red;
+  width: 2rem;
+  height: 2rem;
+}
+.navbar-cart-items p {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,21 +1,26 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+}
 .product {
   display: flex;
-  flex-basis: 20%;
+  max-width: 23%;
   flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
-  padding: 1.3rem;
-  border-radius: 0.3rem;
+  justify-content: space-around;
+  padding: 0.4rem;
+  border-radius: 0.4rem;
   border: 2px solid blue;
 }
 .product-header {
   flex-basis: 30%;
 }
 .product-header h3 {
-  margin-bottom: 1rem;
+  margin-bottom: 0.4rem;
 }
 .product-body {
-  margin: 2rem;
+  margin: 0.2rem;
   flex-basis: 50%;
 }
 .product-footer {
@@ -35,5 +40,5 @@
 }
 .product-footer-button:hover {
   background-color: white;
-  color: rgb(245, 128, 18);
+  color: orange;
 }

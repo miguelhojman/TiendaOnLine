@@ -5,6 +5,7 @@ export interface Product {
   price: number;
   categoryId: String;
   images: [];
+  cantidad: number;
 }
 //tiene que coincidir con el producto de la API pública que voy a consumir
 //PLATZI FAKE STORE API

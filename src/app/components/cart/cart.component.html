@@ -1,27 +1,27 @@
 <div class="product-cart-wrapper">
-  <article class="product-cart">
+  <article class="product-cart" *ngFor="let product of myCart$ | async">
     <div class="product-body">
-      <p>product.title</p>
+      <p>{{ product.title }}</p>
       <div class="product-cart-info">
-        <p>$$ product.price</p>
-        <p>product.cantidad</p>
+        <p>$ {{ product.price }}</p>
+        <p>{{ product.cantidad }}</p>
       </div>
     </div>
 
     <div class="product-cart-total">
-      <p>product.price * product.cantitdad</p>
+      <p>{{ product.price * product.cantidad }}</p>
     </div>
     <div class="product-cart-buttons">
       <div class="product-cart-operators">
-        <i class="fa-solid fa-minus"></i>
-        <span class="numero">44</span>
-        <i class="fa-solid fa-plus"></i>
+        <i class="fa-solid fa-minus" (click)="restarUnits(product.id)"></i>
+        <span class="numero">{{ product.cantidad }}</span>
+        <i class="fa-solid fa-plus" (click)="sumarUnits(product.id)"></i>
       </div>
-      <i class="fa-solid fa-trash"></i>
+      <i class="fa-solid fa-trash" (click)="deleteProduct(product.id)"></i>
     </div>
   </article>
   <div class="cart-total">
-    <p class="cart-total-total">TOTAL:$$ total</p>
+    <p class="cart-total-total">TOTAL:$ {{ totalCart() }}</p>
   </div>
-  <button class="cart-btn">IR A MI CESTA</button>
+  <button class="cart-btn">PAGAR LA COMPRA</button>
 </div>

@@ -14,7 +14,6 @@ export class MainComponent {
   ngOnInit(): void {
     this.storeService.getAllProducts().subscribe((data) => {
       this.products = data;
-      console.log(this.products);
     });
   }
 }

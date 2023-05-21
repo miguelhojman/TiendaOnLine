@@ -34,4 +34,7 @@ export class CartComponent {
   totalCart() {
     return this.storeService.totalCart();
   }
+  pagar() {
+    alert('Ir a medios de pago');
+  }
 }

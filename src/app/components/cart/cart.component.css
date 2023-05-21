@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   padding: 0.5rem;
+  background-color: rgb(201, 200, 200);
 }
 .product-cart {
   display: flex;
@@ -38,7 +39,8 @@
   text-align: center;
   font-weight: 800;
   border-radius: 0.3rem;
-  background-color: orange;
+  background-color: rgb(139, 249, 146);
+  cursor: pointer;
 }
 .cart-total {
   font-weight: 800;

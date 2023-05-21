@@ -47,7 +47,7 @@
   display: none;
 }
 .show {
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -25,7 +25,7 @@ export class CartComponent {
   }
   restarUnits(id: String): void {
     const product = this.storeService.FindProductById(id);
-    if (product && product.cantidad > 0) {
+    if (product && product.cantidad > 1) {
       product.cantidad--;
     } else {
       this.deleteProduct(id);

@@ -58,4 +58,10 @@ export class StoreService {
     }, 0);
     return result;
   }
+  totalCantidad() {
+    const result = this.myList.reduce(function (acc, product) {
+      return acc + product.cantidad;
+    }, 0);
+    return result;
+  }
 }
